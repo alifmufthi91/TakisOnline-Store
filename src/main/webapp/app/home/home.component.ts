@@ -12,7 +12,6 @@ import { LoginModalService, AccountService, Account } from 'app/core';
 export class HomeComponent implements OnInit {
     account: Account;
     modalRef: NgbModalRef;
-
     constructor(
         private accountService: AccountService,
         private loginModalService: LoginModalService,

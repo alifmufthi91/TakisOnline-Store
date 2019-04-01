@@ -12,7 +12,6 @@ import { HttpResponse, HttpErrorResponse, HttpHeaders } from '@angular/common/ht
 export class ProductCatalogComponent implements OnInit {
     products: IProduct[];
     constructor(private productService: ProductService, private jhiAlertService: JhiAlertService) {}
-
     ngOnInit() {
         this.loadAll();
     }

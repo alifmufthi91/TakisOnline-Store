@@ -3,6 +3,9 @@ Main page styles
 ========================================================================== */
 .example-card {
     max-width: 400px;
+    margin-right: 8px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .example-header-image {
@@ -10,13 +13,13 @@ Main page styles
     background-size: cover;
 }
 
-.hipster {
-    display: inline-block;
-    width: 347px;
-    height: 497px;
-    background: url('../../content/images/jhipster_family_member_1.svg') no-repeat center top;
-    background-size: contain;
-}
+// .hipster {
+//     display: inline-block;
+//     width: 347px;
+//     height: 497px;
+//     background: url('../../content/images/jhipster_family_member_1.svg') no-repeat center top;
+//     background-size: contain;
+// }
 
 /* wait autoprefixer update to allow simple generation of high pixel density media query */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -24,8 +27,8 @@ Main page styles
     only screen and (-o-min-device-pixel-ratio: 2/1),
     only screen and (min-resolution: 192dpi),
     only screen and (min-resolution: 2dppx) {
-    .hipster {
-        background: url('../../content/images/jhipster_family_member_1.svg') no-repeat center top;
-        background-size: contain;
-    }
+    // .hipster {
+    //     background: url('../../content/images/jhipster_family_member_1.svg') no-repeat center top;
+    //     background-size: contain;
+    // }
 }
