@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { ProductBannerComponent } from './product-banner.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ProductService } from 'app/entities/product';
-import { JhiAlertService } from 'ng-jhipster';
+
 @NgModule({
     declarations: [ProductBannerComponent],
-    imports: [CommonModule, NgbModule, JhiAlertService],
+    imports: [CommonModule, NgbModule],
     providers: [ProductService]
 })
 export class ProductBannerModule {}

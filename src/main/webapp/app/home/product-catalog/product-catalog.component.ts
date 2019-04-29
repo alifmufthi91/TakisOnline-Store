@@ -7,7 +7,7 @@ import { HttpResponse, HttpErrorResponse, HttpHeaders } from '@angular/common/ht
 @Component({
     selector: 'jhi-product-catalog',
     templateUrl: './product-catalog.component.html',
-    styles: []
+    styleUrls: ['./product-catalog.scss']
 })
 export class ProductCatalogComponent implements OnInit {
     products: IProduct[];

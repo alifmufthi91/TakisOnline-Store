@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'app/entities/product';
 import { IProduct } from 'app/shared/model/product.model';
 import { HttpHeaders, HttpResponse, HttpErrorResponse } from '@angular/common/http';
-import { JhiAlertService } from 'ng-jhipster';
 
 @Component({
     selector: 'jhi-product-banner',
@@ -11,7 +10,7 @@ import { JhiAlertService } from 'ng-jhipster';
 })
 export class ProductBannerComponent implements OnInit {
     products: IProduct[];
-    constructor(private productService: ProductService, private jhiAlertService: JhiAlertService) {}
+    constructor(private productService: ProductService) {}
 
     ngOnInit() {
         this.loadAll();
@@ -30,7 +29,5 @@ export class ProductBannerComponent implements OnInit {
         this.products = data;
     }
 
-    protected onError(errorMessage: string) {
-        this.jhiAlertService.error(errorMessage, null, null);
-    }
+    protected onError(errorMessage: string) {}
 }
